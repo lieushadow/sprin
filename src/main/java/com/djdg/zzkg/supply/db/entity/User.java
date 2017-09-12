@@ -32,6 +32,9 @@ public class User extends BaseEntity {
 
     @Column(name = "password", columnDefinition = "varchar(32) default null COMMENT '密码'")
     private String password;
+    
+    @Column(name = "phone", nullable = false, columnDefinition = "varchar(11) default '' COMMENT '手机好'")
+    private String phone;
 
     @Column(name = "salt", columnDefinition = "varchar(8) default null COMMENT '盐'")
     private String salt;
